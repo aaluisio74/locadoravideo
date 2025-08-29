@@ -28,20 +28,193 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jLabelTitulo = new javax.swing.JLabel();
+        jPanelCadastroCliente = new javax.swing.JPanel();
+        jLabelNome = new javax.swing.JLabel();
+        jTextFieldNome = new javax.swing.JTextField();
+        jLabelDataNascimento = new javax.swing.JLabel();
+        jLabelCPF = new javax.swing.JLabel();
+        jLabelEmail = new javax.swing.JLabel();
+        jLabelEndereco = new javax.swing.JLabel();
+        jTextFieldEmail = new javax.swing.JTextField();
+        jTextFieldEndereco = new javax.swing.JTextField();
+        jButtonSalvar = new javax.swing.JButton();
+        jButtonLimpar = new javax.swing.JButton();
+        jButtonCancelar = new javax.swing.JButton();
+        jButtonConsultar = new javax.swing.JButton();
+        jFormattedTextFieldDataNascimento = new javax.swing.JFormattedTextField();
+        jFormattedTextFieldCPF = new javax.swing.JFormattedTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("Filme, Pipoca e Refrigerante");
+        setName("frameTelaCadastroCliente"); // NOI18N
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(800, 400));
+        setResizable(false);
+
+        jLabelTitulo.setFont(new java.awt.Font("Comic Sans MS", 1, 24)); // NOI18N
+        jLabelTitulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/icon.png"))); // NOI18N
+        jLabelTitulo.setText("Cadastro de Cliente");
+
+        jPanelCadastroCliente.setBackground(new java.awt.Color(102, 102, 102));
+        jPanelCadastroCliente.setPreferredSize(new java.awt.Dimension(780, 300));
+
+        jLabelNome.setBackground(new java.awt.Color(255, 255, 255));
+        jLabelNome.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jLabelNome.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelNome.setText("Nome:");
+
+        jTextFieldNome.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        jTextFieldNome.setToolTipText("Informe o nome do cliente.");
+
+        jLabelDataNascimento.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jLabelDataNascimento.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelDataNascimento.setText("Data de Nascimento:");
+
+        jLabelCPF.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jLabelCPF.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelCPF.setText("CPF:");
+
+        jLabelEmail.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jLabelEmail.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelEmail.setText("E-mail:");
+        jLabelEmail.setToolTipText("");
+
+        jLabelEndereco.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jLabelEndereco.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelEndereco.setText("Endereço:");
+        jLabelEndereco.setToolTipText("");
+
+        jTextFieldEmail.setToolTipText("Informe o e-mail.");
+
+        jTextFieldEndereco.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+        jTextFieldEndereco.setToolTipText("Informe o endereço completo.");
+
+        jButtonSalvar.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jButtonSalvar.setText("Salvar");
+        jButtonSalvar.setPreferredSize(new java.awt.Dimension(100, 35));
+
+        jButtonLimpar.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jButtonLimpar.setText("Limpar");
+        jButtonLimpar.setPreferredSize(new java.awt.Dimension(100, 35));
+
+        jButtonCancelar.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jButtonCancelar.setLabel("Cancelar");
+        jButtonCancelar.setPreferredSize(new java.awt.Dimension(100, 35));
+
+        jButtonConsultar.setFont(new java.awt.Font("Comic Sans MS", 0, 18)); // NOI18N
+        jButtonConsultar.setText("Consultar");
+        jButtonConsultar.setMaximumSize(new java.awt.Dimension(110, 35));
+        jButtonConsultar.setMinimumSize(new java.awt.Dimension(110, 35));
+        jButtonConsultar.setPreferredSize(new java.awt.Dimension(110, 35));
+
+        try {
+            jFormattedTextFieldDataNascimento.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jFormattedTextFieldDataNascimento.setToolTipText("Informe a data de nascimento.");
+        jFormattedTextFieldDataNascimento.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+
+        try {
+            jFormattedTextFieldCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        jFormattedTextFieldCPF.setToolTipText("Informe o CPF.");
+        jFormattedTextFieldCPF.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
+
+        javax.swing.GroupLayout jPanelCadastroClienteLayout = new javax.swing.GroupLayout(jPanelCadastroCliente);
+        jPanelCadastroCliente.setLayout(jPanelCadastroClienteLayout);
+        jPanelCadastroClienteLayout.setHorizontalGroup(
+            jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelCadastroClienteLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanelCadastroClienteLayout.createSequentialGroup()
+                        .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabelNome)
+                            .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(jLabelDataNascimento)
+                                .addComponent(jLabelCPF, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabelEmail, javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jLabelEndereco, javax.swing.GroupLayout.Alignment.TRAILING)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextFieldEndereco)
+                            .addGroup(jPanelCadastroClienteLayout.createSequentialGroup()
+                                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jFormattedTextFieldCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jFormattedTextFieldDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 104, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(jTextFieldNome))
+                        .addGap(6, 6, 6))
+                    .addGroup(jPanelCadastroClienteLayout.createSequentialGroup()
+                        .addGap(32, 32, 32)
+                        .addComponent(jButtonSalvar, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                        .addGap(83, 83, 83)
+                        .addComponent(jButtonLimpar, javax.swing.GroupLayout.DEFAULT_SIZE, 128, Short.MAX_VALUE)
+                        .addGap(81, 81, 81)
+                        .addComponent(jButtonCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, 127, Short.MAX_VALUE)
+                        .addGap(68, 68, 68)
+                        .addComponent(jButtonConsultar, javax.swing.GroupLayout.DEFAULT_SIZE, 136, Short.MAX_VALUE)
+                        .addGap(34, 34, 34))))
+        );
+        jPanelCadastroClienteLayout.setVerticalGroup(
+            jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelCadastroClienteLayout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelNome)
+                    .addComponent(jTextFieldNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelDataNascimento)
+                    .addComponent(jFormattedTextFieldDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelCPF)
+                    .addComponent(jFormattedTextFieldCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelEmail)
+                    .addComponent(jTextFieldEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabelEndereco)
+                    .addComponent(jTextFieldEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 24, Short.MAX_VALUE)
+                .addGroup(jPanelCadastroClienteLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jButtonConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButtonSalvar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(9, 9, 9))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabelTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jPanelCadastroCliente, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 823, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelCadastroCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 297, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -70,5 +243,21 @@ public class TelaCadastroCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonCancelar;
+    private javax.swing.JButton jButtonConsultar;
+    private javax.swing.JButton jButtonLimpar;
+    private javax.swing.JButton jButtonSalvar;
+    private javax.swing.JFormattedTextField jFormattedTextFieldCPF;
+    private javax.swing.JFormattedTextField jFormattedTextFieldDataNascimento;
+    private javax.swing.JLabel jLabelCPF;
+    private javax.swing.JLabel jLabelDataNascimento;
+    private javax.swing.JLabel jLabelEmail;
+    private javax.swing.JLabel jLabelEndereco;
+    private javax.swing.JLabel jLabelNome;
+    private javax.swing.JLabel jLabelTitulo;
+    private javax.swing.JPanel jPanelCadastroCliente;
+    private javax.swing.JTextField jTextFieldEmail;
+    private javax.swing.JTextField jTextFieldEndereco;
+    private javax.swing.JTextField jTextFieldNome;
     // End of variables declaration//GEN-END:variables
 }
