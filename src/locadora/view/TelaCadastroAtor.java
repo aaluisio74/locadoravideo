@@ -21,19 +21,18 @@ public class TelaCadastroAtor extends javax.swing.JFrame {
     /* Variável como atributo da classe Cadastro de Ator. Invisível para o usuário do sistema.
        O código do ator ficará guardado nessa variável.
        PRIMEIRO USO: campo para preencher a tela de Cadastro do Ator.*/
-    private TelaPrincipal telaPrincipal;
     private Integer codAtor = 0;
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaCadastroAtor.class.getName());
     
     
-    //1º) Variável de Referência. Referencia a Tela Principal.
+    //1º) Variável de Referência para a Tela Principal.
     private TelaPrincipal telaprincipal;
 
     /**
      * Creates new form TelaCadastroAtor
      */
-    //2º) Método para acessar a Tela Cadastro do Ator.
+    //2º) Método para acessar a Tela Principal.
     public TelaCadastroAtor(TelaPrincipal telaPrincipal) {
         this.telaprincipal = telaPrincipal;
         initComponents();       
@@ -255,7 +254,6 @@ public class TelaCadastroAtor extends javax.swing.JFrame {
         } catch (ExceptionDAO ex) {
             Logger.getLogger(TelaCadastroAtor.class.getName()).log(Level.SEVERE, null, ex);
         }
-                
     }//GEN-LAST:event_jButtonExcluirActionPerformed
                                            
 

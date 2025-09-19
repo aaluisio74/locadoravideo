@@ -57,11 +57,6 @@ public class TelaPrincipal extends javax.swing.JFrame {
         setTitle("Filme, Pipoca e Refrigerante");
         setName("TelaCadastro"); // NOI18N
         setResizable(false);
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowClosed(java.awt.event.WindowEvent evt) {
-                SairTelaPrincipal(evt);
-            }
-        });
 
         jLabelLogo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/logo.png"))); // NOI18N
@@ -162,11 +157,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_AbrirCadastroUsuario
 
-    //3º) Método para fechar a Tela Principal. EVENTO windowClosed do componente JFrame.
-    private void SairTelaPrincipal(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_SairTelaPrincipal
-        //FAZER Código para Sair/Fechar a tela principal
-    }//GEN-LAST:event_SairTelaPrincipal
-    
+   
     /**
      * @param args the command line arguments
      */

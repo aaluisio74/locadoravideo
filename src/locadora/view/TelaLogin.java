@@ -41,6 +41,11 @@ public class TelaLogin extends javax.swing.JFrame {
         setBackground(new java.awt.Color(102, 0, 153));
         setUndecorated(true);
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                Sair(evt);
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jTextFieldUsuario.setBackground(new java.awt.Color(45, 43, 60));
@@ -93,6 +98,10 @@ public class TelaLogin extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Usuário ou senha inválido!");
         }
     }//GEN-LAST:event_Logar
+
+    private void Sair(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_Sair
+        System.exit(0);
+    }//GEN-LAST:event_Sair
 
     /**
      * @param args the command line arguments

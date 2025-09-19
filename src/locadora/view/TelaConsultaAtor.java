@@ -63,6 +63,7 @@ public class TelaConsultaAtor extends javax.swing.JFrame {
                 fecharJanela(evt);
             }
         });
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanelConsultaAtor.setBackground(new java.awt.Color(102, 102, 102));
 
@@ -123,7 +124,6 @@ public class TelaConsultaAtor extends javax.swing.JFrame {
         jPanelConsultaAtor.setLayout(jPanelConsultaAtorLayout);
         jPanelConsultaAtorLayout.setHorizontalGroup(
             jPanelConsultaAtorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabelConsultaAtor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanelConsultaAtorLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanelConsultaAtorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -136,12 +136,14 @@ public class TelaConsultaAtor extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jScrollPaneConsultaAtor))
                 .addContainerGap())
+            .addComponent(jLabelConsultaAtor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanelConsultaAtorLayout.setVerticalGroup(
             jPanelConsultaAtorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelConsultaAtorLayout.createSequentialGroup()
+                .addGap(11, 11, 11)
                 .addComponent(jLabelConsultaAtor)
-                .addGap(18, 18, 18)
+                .addGap(7, 7, 7)
                 .addGroup(jPanelConsultaAtorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
                     .addComponent(jTextFieldNomeAtor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonConsultaAtor)
@@ -151,16 +153,7 @@ public class TelaConsultaAtor extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelConsultaAtor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelConsultaAtor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        getContentPane().add(jPanelConsultaAtor, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);

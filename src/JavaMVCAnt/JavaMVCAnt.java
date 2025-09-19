@@ -28,5 +28,4 @@ public class JavaMVCAnt {
         TelaLogin telaLogin = new TelaLogin();
         telaLogin.setVisible(true);
     }
-    
 }
